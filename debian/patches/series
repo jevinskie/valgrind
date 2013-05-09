@@ -7,3 +7,4 @@
 08_fix-spelling-in-manpage.patch
 09_valgrind-listener-manpage.patch
 10_unbreak-xinclude-in-manpage.patch
+11_glibc-2.17.patch
