@@ -1,0 +1,27 @@
+From 54d62304efe8884145bbda2e8d1752a93f4bbb01 Mon Sep 17 00:00:00 2001
+From: tom <tom@a5019735-40e9-0310-863c-91ae7b9d1cf9>
+Date: Mon, 21 Jan 2013 15:17:02 +0000
+Subject: [PATCH] Replace bcopy on linux as, at least in 32 bit build, glibc will
+ sometimes choose to use an optimised version. Fixes #311407.
+
+git-svn-id: svn://svn.valgrind.org/valgrind/trunk@13253 a5019735-40e9-0310-863c-91ae7b9d1cf9
+Debian-Bug: http://bugs.debian.org/691109
+---
+ memcheck/mc_replace_strmem.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+diff --git a/memcheck/mc_replace_strmem.c b/memcheck/mc_replace_strmem.c
+index c1a90bc..64df1c3 100644
+--- a/memcheck/mc_replace_strmem.c
++++ b/memcheck/mc_replace_strmem.c
+@@ -1103,6 +1103,7 @@ static inline void my_exit ( int x )
+    }
+ 
+ #if defined(VGO_linux)
++ BCOPY(VG_Z_LIBC_SONAME, bcopy)
+ 
+ #elif defined(VGO_darwin)
+  //BCOPY(VG_Z_LIBC_SONAME, bcopy)
+-- 
+1.7.0.9.GIT
+
