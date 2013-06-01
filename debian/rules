@@ -24,8 +24,12 @@ ifeq ($(DEB_HOST_ARCH_CPU),arm)
 	has_v7 := $(call check_asm, $(v7_asm))
 
 	ifneq ($(has_v7),1)
-		CFLAGS += -march=armv7-a
+		CFLAGS += -march=armv7-a # fixes 592614
 	endif
+endif
+
+ifeq ($(DEB_HOST_ARCH),mipsel)
+	CFLAGS += -mips2 # fixes 710307
 endif
 
 %:
