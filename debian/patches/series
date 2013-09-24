@@ -9,3 +9,4 @@
 10_unbreak-xinclude-in-manpage.patch
 11_glibc-2.17.patch
 12_bcopy.patch
+13_pthread-cond-init.patch
