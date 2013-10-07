@@ -1,6 +1,12 @@
 valgrind for Debian
 -------------------
 
+  Debian's valgrind package ships with a suppression file named "debian.supp"
+  along with upstream's "default.supp" under /usr/lib/valgrind. Note though
+  that valgrind doesn't load any suppression file by default.
+
+  -- Alessandro Ghedini <ghedo@debian.org>  Mon, 07 Oct 2013 16:44:00 +0200
+
   This package changes the version string of Valgrind to make reporting bugs a
   little bit more efficient.
 
