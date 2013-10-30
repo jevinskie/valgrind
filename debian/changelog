@@ -1,9 +1,13 @@
-valgrind (1:3.8.1-6) UNRELEASED; urgency=low
+valgrind (1:3.8.1-6) unstable; urgency=low
 
   * Only install BSD-licensed header files (Closes: #725223)
   * Fix lintian vcs-field-not-canonical
+  * Do not install/use outdated and useless debian-libc6-dbg.supp anymore
+  * Add note in README.Debian about installed suppression files
+    (Closes: #725522)
+  * Do not build on armel anymore (Closes: #720409)
 
- -- Alessandro Ghedini <ghedo@debian.org>  Sun, 06 Oct 2013 14:20:08 +0200
+ -- Alessandro Ghedini <ghedo@debian.org>  Thu, 31 Oct 2013 11:34:53 +0100
 
 valgrind (1:3.8.1-5) unstable; urgency=low
 
