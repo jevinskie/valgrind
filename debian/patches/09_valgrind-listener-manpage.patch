@@ -3,7 +3,7 @@ Origin: vendor
 Bug-Debian: http://bugs.debian.org/632822
 Author: Alessandro Ghedini <ghedo@debian.org>
 Reviewed-by: Alessandro Ghedini <ghedo@debian.org>
-Last-Update: 2012-05-11
+Last-Update: 2013-11-04
 
 --- /dev/null
 +++ b/docs/xml/valgrind-listener-manpage.xml
@@ -113,7 +113,7 @@ Last-Update: 2012-05-11
 +
 --- a/docs/Makefile.am
 +++ b/docs/Makefile.am
-@@ -75,6 +75,7 @@
+@@ -76,6 +76,7 @@
  	xml/quick-start-guide.xml \
  	xml/tech-docs.xml \
  	xml/valgrind-manpage.xml \
