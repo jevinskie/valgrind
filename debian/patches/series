@@ -3,3 +3,4 @@
 05_fix-callgrind_control.patch
 07_fix-spelling-in-binary.patch
 08_fix-spelling-in-manpage.patch
+09_fix-armhf-detect.patch
