@@ -1,10 +1,5 @@
 usr/bin/*
-usr/include/valgrind/memcheck.h
-usr/include/valgrind/drd.h
-usr/include/valgrind/callgrind.h
-usr/include/valgrind/helgrind.h
-usr/include/valgrind/valgrind.h
 usr/share/*
-usr/lib/*
+usr/lib/valgrind/*
 debian/valgrind.sh	usr/bin
 debian/supp/*		usr/lib/valgrind
