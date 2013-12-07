@@ -1,3 +1,14 @@
+valgrind (1:3.9.0-2) unstable; urgency=medium
+
+  * Remove valgrind.manpages (manpages are installed anyway)
+  * Build on mips64 and mips64el (Closes: #729040)
+  * Add 09_fix-armhf-detect.patch to fix FTBFS on armhf (Closes: #730844)
+  * Move headers and pkg-config file to valgrind-dev (Closes: #731228)
+    See Debian.NEWS for more info
+  * Bump Standards-Version to 3.9.5 (no changes needed)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 10 Dec 2013 19:28:22 +0100
+
 valgrind (1:3.9.0-1) unstable; urgency=low
 
   * New upstream release
