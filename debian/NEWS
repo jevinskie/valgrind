@@ -1,17 +1,3 @@
-valgrind (1:3.9.0-2) unstable; urgency=medium
-
-  As of version 1:3.9.0-2 the headers and the pkg-config file have been moved
-  to the new valgrind-dev package, so that packages that consume them don't
-  have to stay in sync with the list of valgrind supported architectures.
-
-  It should be safe to use them even on platforms not supported by valgrind
-  where the various macro provided will result in nop.
-
-  For the time being valgrind will depend on valgrind-dev in order to avoid
-  "breaking" packages that expect those files in the main valgrind package.
-
- -- Alessandro Ghedini <ghedo@debian.org>  Wed, 04 Dec 2013 18:09:51 +0100
-
 valgrind (1:3.7.0-5) unstable; urgency=low
 
   Valgrind symbols have been stripped since version 1:3.6.1-5 because they take
