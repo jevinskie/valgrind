@@ -24,6 +24,8 @@ Architecture: amd64 armhf i386 mips mipsel mips64 mips64el powerpc ppc64 s390x x
 Depends: ${misc:Depends}, ${shlibs:Depends}, libc6-dbg
 Suggests: valgrind-mpi, kcachegrind, alleyoop, valkyrie (>> 1.3.0)
 Recommends: valgrind-dbg, gdb
+Breaks: valgrind-dev
+Replaces: valgrind-dev
 Description: instrumentation framework for building dynamic analysis tools
  Valgrind is a system for debugging and profiling Linux programs. With its tool
  suite you can automatically detect many memory management and threading bugs,
