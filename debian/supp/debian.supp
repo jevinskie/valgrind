@@ -24,3 +24,37 @@
   fun:_dlerror_run
   fun:dlopen@@GLIBC_2.2.5
 }
+
+## HACK to do with index not being intercepted early enough, from glibc-2.3.supp
+{
+   index-not-intercepted-early-enough-HACK-1
+   Memcheck:Cond
+   fun:index
+   obj:*
+   fun:_dl_map_object
+}
+
+{
+   index-not-intercepted-early-enough-HACK-2
+   Memcheck:Cond
+   fun:index
+   fun:_dl_map_object
+   obj:*
+   fun:_dl_catch_error
+}
+
+{
+   index-not-intercepted-early-enough-HACK-3
+   Memcheck:Cond
+   fun:index
+   fun:_dl_map_object
+   obj:*
+   fun:_dl_sysdep_start
+}
+
+{
+   index-not-intercepted-early-enough-HACK-4
+   Memcheck:Cond
+   fun:index
+   fun:expand_dynamic_string_token
+}
