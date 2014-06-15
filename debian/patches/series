@@ -6,3 +6,4 @@
 09_fix-armhf-detect.patch
 10_fix-memcheck-manual.patch
 11_track-af_inet6.patch
+12_glibc-2.19.patch
