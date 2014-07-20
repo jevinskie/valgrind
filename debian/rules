@@ -10,7 +10,7 @@ ifeq ($(DEB_HOST_ARCH),mipsel)
 endif
 
 %:
-	dh $@ --parallel --with=autotools-dev,bash-completion
+	dh $@ --parallel --with=autoreconf,bash-completion
 
 override_dh_auto_configure:
 	dh_auto_configure -- --enable-tls CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)"

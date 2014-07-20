@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Alessandro Ghedini <ghedo@debian.org>
 Uploaders: Roland Stigge <stigge@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
- autotools-dev,
  bash-completion,
+ dh-autoreconf,
  gdb,
  gcc-multilib [amd64],
  libc6-dev-i386 [amd64],
