@@ -4,17 +4,6 @@ Bug-Debian: http://bugs.debian.org/730844
 Author: Alessandro Ghedini <ghedo@debian.org>
 Last-Update: 2013-11-30
 
---- a/configure
-+++ b/configure
-@@ -5390,7 +5390,7 @@
-         ARCH_MAX="s390x"
-         ;;
- 
--     armv7*)
-+     arm*)
- 	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: ok (${host_cpu})" >&5
- $as_echo "ok (${host_cpu})" >&6; }
- 	ARCH_MAX="arm"
 --- a/configure.ac
 +++ b/configure.ac
 @@ -190,7 +190,7 @@
