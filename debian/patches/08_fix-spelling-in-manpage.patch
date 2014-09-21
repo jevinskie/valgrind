@@ -62,3 +62,14 @@ Last-Update: 2013-11-04
  .sp
  .if n \{\
  .RS 4
+--- a/docs/xml/manual-core.xml
++++ b/docs/xml/manual-core.xml
+@@ -2027,7 +2027,7 @@
+             knowledge of the glibc stack cache implementation and by
+             examining the debug information of the pthread
+             library. This technique is thus somewhat fragile and might
+-            not work for all glibc versions. This has been succesfully
++            not work for all glibc versions. This has been successfully
+             tested with various glibc versions (e.g. 2.11, 2.16, 2.18)
+             on various platforms.</para>
+         </listitem>
