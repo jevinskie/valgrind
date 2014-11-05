@@ -1,3 +1,10 @@
+valgrind (1:3.10.0-2) unstable; urgency=medium
+
+  * Add note in README.Debian about intrumenting i386 executables on amd64
+  * Avoid Depends: libc-i386 on valgrind:amd64 (Closes: #762386)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Wed, 05 Nov 2014 20:56:12 +0100
+
 valgrind (1:3.10.0-1) unstable; urgency=medium
 
   * New upstream release
