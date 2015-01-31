@@ -1,8 +1,10 @@
-valgrind (1:3.10.1-1) UNRELEASED; urgency=medium
+valgrind (1:3.10.1-1) unstable; urgency=medium
 
   * New upstream release
+  * Install all header files again, they are needed to build third-party
+    plugins (Closes: #771900)
 
- -- Alessandro Ghedini <ghedo@debian.org>  Sat, 31 Jan 2015 21:42:40 +0100
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 31 Jan 2015 22:00:31 +0100
 
 valgrind (1:3.10.0-4) unstable; urgency=medium
 
