@@ -5,3 +5,4 @@
 08_fix-spelling-in-manpage.patch
 09_fix-armhf-detect.patch
 10_mips-page-size.patch
+11_mips-link-tool.patch
